@@ -17,12 +17,12 @@ export default function Home({ exploreData, cardsData }) {
       <Header />
       <Banner />
 
-      <main className="max-w-7xl mx-auto px-8 sm:px-16">
-        <section className="pt-6">
+      <main className="max-w-7xl mx-auto px-8 sm:px-16 bg-gray-50">
+        <section className="pt-6 ">
           <h2 className="text-4xl font-semibold pb-5"> Explore Nearby </h2>
           {/* Pull some data from a server - API endpoints */}
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
+          <div className="bg-white rounded-2xl shadow-md p-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
             {exploreData?.map(({ img, distance, location }) => (
               <SmallCard
                 key={img} //always add a unique identifer when passing from map
